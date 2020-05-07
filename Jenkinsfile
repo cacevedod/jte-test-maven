@@ -6,13 +6,13 @@ pipeline{
         stage('build'){
             steps{
                 sh 'chmod +x mvnw'
-                sh './mvnw clean package -DskipTests'
+                sh 'mvn clean package -DskipTests'
                 archiveArtifacts artifacts: 'target/*.jar'
             }            
         }
         stage('test'){
             steps{
-                sh './mvnw verify'
+                sh 'mvn verify'
             }
             post {
                 always {
