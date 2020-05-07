@@ -1,0 +1,5 @@
+libraries{
+    git
+    maven
+    approve
+}
