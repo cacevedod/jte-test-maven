@@ -1,5 +1,7 @@
+pipeline_template = 'java'
+skip_default_checkout = true
+
 libraries{
-    git
-    maven
+    gradle
     approve
 }
