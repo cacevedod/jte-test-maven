@@ -3,5 +3,4 @@ skip_default_checkout = true
 
 libraries{
     maven
-    approve
 }
