@@ -3,7 +3,5 @@ skip_default_checkout = true
 
 libraries{
     maven
-    approve{
-        branch_conditional = "master"
-    }
+    approve
 }
